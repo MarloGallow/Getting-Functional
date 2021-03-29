@@ -26,9 +26,16 @@ then?
 */
 
 function maleCount(array){
-
+  var count = 0;
+for(var i = 0; i <= array.length - 1; i++) {
+//console.log(array[i])
+if(array[i].gender === 'female'){
+count++
+}
+}
+return count;
 };
-
+console.log(femaleCount(customers))
 
 /*
 2. Female Count
@@ -50,5 +57,12 @@ then?
 */
 
 function femaleCount(array){
-
+var count = 0;
+for(var i = 0; i <= array.length - 1; i++) {
+  if(array[i].gender === 'male'){
+count++
+}
+}
+return count;
 };
+console.log(maleCount(customers))
